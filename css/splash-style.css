@@ -78,7 +78,7 @@
 }
 
 body {
-    color: #3a3a3a;
+    color: #767676;
 }
 
 .hero {
@@ -106,9 +106,9 @@ body {
 }
 
 .left-panel {
-    width: 254px;
+    width: 250px;
     text-align: center;
-    padding: 28px;
+    padding: 30px;
 }
 
 .left-panel .logo {
@@ -117,11 +117,17 @@ body {
 
 .left-panel .content {
     font-family: source_sans_proregular;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 22px;
+}
+
+.paragraph2{
+    padding-top: 15px;
 }
 
 .meetup {
-    margin-top: 45px;
+    margin-top: 38px;
 }
 
 /* iPad */
