@@ -1,0 +1,163 @@
+@charset 'UTF-8';
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900);
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+/***/
+/*Custom Additions*/
+/***/
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('font/sourcesanspro-regular-webfont.eot');
+    src: url('font/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/sourcesanspro-regular-webfont.woff') format('woff'),
+    url('font/sourcesanspro-regular-webfont.ttf') format('truetype'),
+    url('font/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'source_sans_prosemibold';
+    src: url('font/sourcesanspro-semibold-webfont.eot');
+    src: url('font/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/sourcesanspro-semibold-webfont.woff') format('woff'),
+    url('font/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+    url('font/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('font/sourcesanspro-light-webfont.eot');
+    src: url('font/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/sourcesanspro-light-webfont.woff') format('woff'),
+    url('font/sourcesanspro-light-webfont.ttf') format('truetype'),
+    url('font/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galileoflfmedium';
+    src: url('font/galileoflf-roman-webfont.eot');
+    src: url('font/galileoflf-roman-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/galileoflf-roman-webfont.woff') format('woff'),
+    url('font/galileoflf-roman-webfont.ttf') format('truetype'),
+    url('font/galileoflf-roman-webfont.svg#galileoflfmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.right-panel{
+    float: right;
+    min-width: 70%;
+}
+
+.hero {
+    background-image: url(../images/splash/splash.jpg);
+
+    height: 0;
+    padding: 0; /* remove any pre-existing padding, just in case */
+    padding-bottom: 92.96%; /* for a 4:3 aspect ratio, or use height of image/width * 100 */
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero .logo{
+    display:none;
+}
+
+
+
+    .left-panel {
+        float: left;
+    }
+
+    .floatRight {
+        float: right;
+    }
+
+    .left-panel {
+        width: 254px;
+        text-align: center;
+        padding: 28px;
+    }
+
+    .left-panel .logo {
+        margin-top: 100px;
+    }
+
+    .left-panel .content {
+        font-family: source_sans_proregular;
+        font-size: 15px;
+    }
+
+
+
+    .meetup {
+        margin-top: 45px;
+    }
+
+
+/* iPad */
+@media (max-width : 1024px)  {
+
+    .left-panel, .right-panel{
+        float:none;
+    }
+
+    .left-panel{
+        width: auto;
+    }
+
+    .right-panel{
+        width: auto;
+    }
+
+    .hero .logo{
+        display:block;
+        position:absolute;
+        top: 50px;
+        left: 40px;
+    }
+
+    .left-panel .logo {
+        display:none;
+    }
+
+    .hero {
+        margin-left: 0px;
+    }
+
+}
+
+/* iPad Retina */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone 5 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
