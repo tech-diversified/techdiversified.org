@@ -159,7 +159,7 @@ div#infographic-right-content{
     margin-left: 10%;
 }
 
-#infographic-right-content .infographic-title-1{
+.infographic-title-1{
     font-family: source_sans_prolight;
     font-size: 53px;
     line-height: 53px;
@@ -178,6 +178,24 @@ div#infographic-right-content{
 #two{
     margin: 0 30px;
     padding: 2em 0 !important;
+}
+
+/********/
+/* Section 3 on HomePage - Custom CSS */
+/********/
+
+.lisaright{
+    background: url(../images/lisa_right.png) no-repeat;
+    width: 451px;
+    height: 550px;
+    float:right;
+}
+
+
+
+/* Section 4 */
+#peopleChartWrapper{
+    border-bottom: 8px solid #e9746d;
 }
 
 
@@ -1391,6 +1409,30 @@ div#infographic-right-content{
 				#work .row.images.inactive .image.r {
 					left: 14em;
 				}
+
+
+/*********************************************************************************/
+/* Outreach                                                                         */
+/*********************************************************************************/
+
+#outreach {
+    background: url('images/overlay.png'),url('../images/outreach.png');
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, bottom center;
+    background-repeat: repeat, no-repeat;
+}
+
+/*********************************************************************************/
+/* Brick wall                                                                         */
+/*********************************************************************************/
+
+#brickwall {
+    background: url('../images/brickwall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1010px;
+}
 			
 /*********************************************************************************/
 /* Contact                                                                       */
@@ -1452,7 +1494,7 @@ div#infographic-right-content{
 	
 		#footer .actions {
 			position: absolute;
-			left: 1em;
+			right: 1em;
 			top: 0.25em;
 			height: 5em;
 			line-height: 5em;
@@ -1470,7 +1512,7 @@ div#infographic-right-content{
 		
 		#footer .menu {
 			position: absolute;
-			right: 2em;
+			left: 2em;
 			top: 0;
 			height: 5em;
 			line-height: 5em;
