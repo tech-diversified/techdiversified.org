@@ -214,6 +214,24 @@ div#infographic-right-content{
 }
 
 /* Brick Wall (Get Involved) */
+
+.getInvolvedWrapper header h2{
+    font-family: source_sans_prolight;
+    font-size: 53px;
+    line-height: 53px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.getInvolvedWrapper p{
+    font-family: source_sans_prolight;
+    font-size: 20px;
+    line-height: 30px;
+    color: #39454b;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
 .getInvolvedWrapper{
     padding: 45px;
     background-color: #fff;
@@ -228,6 +246,7 @@ div#infographic-right-content{
 
 .getInvolvedWrapper ul li{
     display: inline-block;
+    margin: 0 10px;
 }
 
 .getInvolvedWrapper ul li a {
