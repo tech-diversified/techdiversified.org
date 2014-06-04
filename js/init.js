@@ -197,7 +197,7 @@
 												});
 
 										// Contact
-											$('#contact')
+											$('#brickwall')
 												.scrollwatch({
 													delay:		25,
 													range:		0.5,
