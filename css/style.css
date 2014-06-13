@@ -106,10 +106,65 @@ body #intro ul li a:hover{
 }
 
 
-#three-lines{
+#headerMenuToggle.threeLines{
     position: fixed;
     right: 25px;
-    top: 25px;
+    top: 15px;
+    cursor:pointer;
+}
+
+#sideBarToggle.threeLines{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor:pointer;
+}
+
+.threeLines .horizontal-bar{
+    width:45px;
+    margin: 8px 0;
+    height: 6px;
+    background-color: #fff;
+}
+
+/***** Invisible Div on which to watch for header display*****/
+section#headerScrollWatch {
+    height: 400px;
+    position: absolute;
+    width: 100%;
+}
+
+/*** right sliding panel ***/
+#rightSideBar{
+    width: 240px;
+    height: 100%;
+    background-color: #242424;
+    position:fixed;
+    right: -250px;
+    top: 0;
+    z-index: 3;
+    padding: 0 35px;
+    -moz-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details wrapper */
+    -webkit-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details */
+    -ms-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details */
+    transition: all .5s ease 0s;
+}
+
+#rightSideBar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#rightSideBar ul{
+    margin-top: 80px;
+}
+
+#rightSideBar li{
+    margin: 20px 0;
+}
+
+#rightSideBar.active{
+    right: 0px;
 }
 
 /********/
@@ -297,6 +352,7 @@ div#infographic-right-content{
 
 	body {
 		background: #fff;
+        overflow-x: hidden;
 	}
 
 		body.loading {
@@ -768,13 +824,6 @@ div#infographic-right-content{
 					line-height: 1em;
 					letter-spacing: -4px;
 				}
-
-                .main.style1 .horizontal-bar{
-                    width:45px;
-                    margin: 8px 0;
-                    height: 6px;
-                    background-color: #fff;
-                }
 				
 				.main.style1 .content {
 					opacity: 1.0;
@@ -1351,8 +1400,8 @@ div#infographic-right-content{
 
 	#header {
 		position: fixed;
-        display: none !important;
-		z-index: 10000;
+        opacity: 0;
+		z-index: 2;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -1360,8 +1409,11 @@ div#infographic-right-content{
 		background: rgba(255,255,255,0);
 		height: 3em;
 		line-height: 3em;
-		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
 	}
+
+    .inactive #header {
+        opacity: 1;
+    }
 	
 	body {
 		 /*padding-top: 3em;*/
@@ -1385,12 +1437,26 @@ div#infographic-right-content{
         }
 	
 	#nav {
-		position: absolute;
-		right: 0.5em;
-		top: 0;
-		height: 3em;
-		line-height: 3em;
+
+		position: fixed;
+        top: -150px;
+		height: 4em;
+		line-height: 4em;
+        -moz-transition: all .5s ease .3s; /* This is the animation TO THE RIGHT for the details wrapper */
+        -webkit-transition: all .5s ease .3s; /* This is the animation TO THE RIGHT for the details */
+        -ms-transition: all .5s ease .3s; /* This is the animation TO THE RIGHT for the details */
+        transition: all .5s ease .3s;
+        z-index: 1;
+        background-color: #282828;
+        color: #fff;
+        width: 100%;
+        text-align: right;
+        padding-right: 5em;
 	}
+
+    #nav.active{
+        top: 0px;
+    }
 
 		#nav ul {
 			margin: 0;
