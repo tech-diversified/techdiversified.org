@@ -105,6 +105,34 @@ body #intro ul li a:hover{
     color: #111 !important;
 }
 
+.sourceSemibold{
+    font-family: source_sans_prosemibold;
+}
+
+.sourceRegular{
+    font-family: source_sans_proregular;
+}
+
+.galileoMedium{
+    font-family: galileoflfmedium;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.sourceSemibold.strong.infoTitle{
+    font-size: 48px;
+    color: #3a404c;
+}
+
+.infographic-table td{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
 
 #headerMenuToggle.threeLines{
     position: fixed;
@@ -219,6 +247,9 @@ div#infographic-right-content{
     font-size: 53px;
     line-height: 53px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 
 #infographic-right-content .infographic-title-2{
@@ -1517,6 +1548,8 @@ div#infographic-right-content{
 /*********************************************************************************/
 
 	#work {
+        background-color: #f0f0f0;
+        padding: 2em 0 0 0;
 	}
 	
 		#work .row.images {
