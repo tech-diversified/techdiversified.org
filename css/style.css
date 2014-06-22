@@ -121,13 +121,34 @@ body #intro ul li a:hover{
     font-weight: bold;
 }
 
+.orange{
+    color: #e9746d;
+}
+
 .sourceSemibold.strong.infoTitle{
     font-size: 48px;
     color: #3a404c;
+    line-height: 48px;
 }
 
 .infographic-table td{
     position: relative;
+}
+
+.infographicParagraph{
+    width: 415px;
+}
+
+.infographic-table{
+    padding: 20px 0;
+}
+
+.leftText{
+    width: 275px;
+}
+
+.infographicImage{
+    width: 200px;
 }
 
 .absolute{

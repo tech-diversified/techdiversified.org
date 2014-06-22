@@ -179,7 +179,9 @@
 						$all
 							.fadeTo(_settings.fadeInSpeed, 1, function() {
 								$body.removeClass('loading');
+                                postLoad();
 								$all.fadeTo(0, 1);
+
 							});
 					}, _settings.fadeInSpeed);
 				});
@@ -424,7 +426,21 @@ $( document ).ready(function(){
     $(".threeLines").on("click", function(evt){
         $("#rightSideBar").toggleClass("active");
     });
-})
+
+});
+
+//called after screen fades in
+function postLoad(){
+
+
+    //Manually check to see if we start out past 280px.  If so, then show the top banner.
+    if(window.scrollY > 280){
+        //Turn on class
+        $("#nav").addClass('active');
+    }else{
+        $("#nav").removeClass('active');
+    }
+}
 
 
 
