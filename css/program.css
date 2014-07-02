@@ -1,0 +1,31 @@
+.program-inner{
+    padding: 50px 30px;
+}
+
+#program header{
+    margin-left: 10px;
+}
+
+#program h2{
+    font-family: source_sans_prolight;
+    color: #3a404c;
+    font-size: 35px;
+}
+
+#program .content{
+    font-family: source_sans_proregular;
+    font-size: 18px;
+}
+
+#program .content .textBlock{
+    width: 50%;
+    padding: 10px;
+}
+
+#program .left{
+    float:left;
+}
+
+#program .center{
+    text-align: center;
+}
