@@ -1,34 +1,31 @@
-.static-inner{
+.program-inner{
     padding: 50px 30px;
 }
 
-#staticWrapper header{
+#program header{
     margin-left: 10px;
 }
 
-#staticWrapper h2{
+#program h2{
     font-family: source_sans_prolight;
     color: #3a404c;
     font-size: 35px;
 }
 
-#staticWrapper .content{
+#program .content{
     font-family: source_sans_proregular;
     font-size: 18px;
 }
 
-#staticWrapper .content .textBlock{
+#program .content .textBlock{
+    width: 50%;
     padding: 10px;
 }
 
-#staticWrapper .left{
+#program .left{
     float:left;
 }
 
-#staticWrapper .center{
+#program .center{
     text-align: center;
-}
-
-#staticWrapper .half-width{
-    width: 50%;
 }
