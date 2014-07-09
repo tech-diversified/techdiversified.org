@@ -32,3 +32,32 @@
 #staticWrapper .half-width{
     width: 50%;
 }
+
+
+#staticWrapper div.question {
+    color: #e9746d;
+    font-family: source_sans_prosemibold;
+    font-size: 23px;
+    padding-left: 10px;
+}
+
+#staticWrapper div.answer {
+    display: none;
+}
+
+#staticWrapper div.bio-container{
+    margin-left: 20px;
+    width: 70%;
+}
+
+#staticWrapper div.bio-contianer .name{
+    font-size: 28px;
+}
+
+#staticWrapper div.bio-contianer .title{
+    font-size: 23px;
+}
+
+#staticWrapper li.team-member{
+    margin: 32px 0;
+}
