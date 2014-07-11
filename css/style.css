@@ -59,8 +59,6 @@
     float: right;
 }
 
-
-
 body.home .body li, body.not_found .body li {
     display: block;
     margin: 10px;
@@ -103,6 +101,24 @@ body #intro ul li a{
 body #intro ul li a:hover{
     background: #fff;
     color: #111 !important;
+}
+
+#bodyWrapper{
+    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
+    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    transition: all .5s linear 0s;
+}
+
+#bodyWrapper.rightMenu{
+    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
+    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    transition: all .5s linear 0s;
+    -webkit-transform: translateX(-240px);
+    transform: translateX(-240px);
+    -ms-transform:translateX(-240px);
+    -moz-transform:translateX(-240px);
 }
 
 .sourceSemibold{
@@ -151,9 +167,6 @@ body #intro ul li a:hover{
     width: 200px;
 }
 
-.absolute{
-    position: absolute;
-}
 
 #headerMenuToggle.threeLines{
     position: fixed;
@@ -189,14 +202,14 @@ section#headerScrollWatch {
     height: 100%;
     background-color: #242424;
     position:fixed;
-    right: -250px;
+    right: -240px;
     top: 0;
     z-index: 3;
     padding: 0 35px;
-    -moz-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details wrapper */
-    -webkit-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details */
-    -ms-transition: all .5s ease 0s; /* This is the animation TO THE RIGHT for the details */
-    transition: all .5s ease 0s;
+    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
+    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    transition: all .5s linear 0s;
 }
 
 #rightSideBar a{
@@ -213,7 +226,14 @@ section#headerScrollWatch {
 }
 
 #rightSideBar.active{
-    right: 0px;
+    -webkit-transform: translateX(-240px);
+    transform: translateX(-240px);
+    -ms-transform:translateX(-240px);
+    -moz-transform:translateX(-240px);
+    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
+    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
+    transition: all .5s linear 0s;
 }
 
 /********/
@@ -293,8 +313,8 @@ div#infographic-right-content{
 
 .lisaright{
     background: url(../images/lisa_right.png) no-repeat;
-    width: 451px;
-    height: 550px;
+    width: 540px;
+    height: 561px;
     float:right;
 }
 

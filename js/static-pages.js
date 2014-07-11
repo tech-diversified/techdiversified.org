@@ -204,22 +204,22 @@
 
 
 
-$( document ).ready(function(){
-    //TD Stuff
-    $(".threeLines").on("click", function(evt){
-        $("#rightSideBar").toggleClass("active");
-    });
+$( document ).ready(function() {
+  //TD Stuff
+  $(".threeLines").on("click", function (evt) {
+    $("#rightSideBar").toggleClass("active");
+  });
 
-    //FAQ Stuff
-    $(".question").on("click", function(evt){
-        //Close all answers and slide open this question's child answer node.
-        $(".answer").hide();
+  //FAQ Stuff
+  $(".question").on("click", function (evt) {
+    //Close all answers and slide open this question's child answer node.
+    $(".answer").hide();
 
-    });
+  });
 
-    //Load the menu
-    loadMenu();
-
+  //Load the menu
+  loadMenu();
+  loadFooter();
 });
 
 //called after screen fades in
@@ -245,7 +245,20 @@ function loadMenu() {
       var rendered = Mustache.render(template, json);
       $('#right-nav-menu').html(rendered);
     });
+  });
+}
 
+
+//Load the right menu of each page
+function loadFooter() {
+  //Get the JSON with the contents of the menu.
+  $.getJSON("js/template_footer.js", function(json){
+
+    //Get the template
+    $.get('templates/footer.mst', function(template) {
+      var rendered = Mustache.render(template, json);
+      $('#footerItems').html(rendered);
+    });
   });
 }
 

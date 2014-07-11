@@ -180,7 +180,7 @@
 							.fadeTo(_settings.fadeInSpeed, 1, function() {
 								$body.removeClass('loading');
 								$all.fadeTo(0, 1);
-
+                scrollCheck();
 							});
 					}, _settings.fadeInSpeed);
 				});
@@ -424,6 +424,8 @@ $( document ).ready(function(){
   //TD Stuff
   $(".threeLines").on("click", function(evt){
     $("#rightSideBar").toggleClass("active");
+    $("#bodyWrapper").toggleClass("rightMenu");
+
   });
 
   //FAQ Stuff
@@ -440,6 +442,11 @@ $( document ).ready(function(){
 
 //called after screen fades in
 function postLoad() {
+  loadMenu();
+  loadFooter();
+}
+
+function scrollCheck(){
   //Manually check to see if we start out past 280px.  If so, then show the top banner.
   if (window.scrollY > 280) {
     //Turn on class
@@ -447,8 +454,6 @@ function postLoad() {
   } else {
     $("#nav").removeClass('active');
   }
-
-  loadMenu();
 }
 
 
@@ -463,5 +468,18 @@ function loadMenu() {
       $('#right-nav-menu').html(rendered);
     });
 
+  });
+}
+
+//Load the right menu of each page
+function loadFooter() {
+  //Get the JSON with the contents of the menu.
+  $.getJSON("js/template_footer.js", function(json){
+
+    //Get the template
+    $.get('templates/footer.mst', function(template) {
+      var rendered = Mustache.render(template, json);
+      $('#footerItems').html(rendered);
+    });
   });
 }

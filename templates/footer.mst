@@ -1,0 +1,3 @@
+{{#footerItems}}
+	<li><a target='_blank' href="{{url}}" class="fa solo {{iconName}}"><span>{{title}}</span></a></li>
+{{/footerItems}}
