@@ -51,6 +51,18 @@
 
 }
 
+@font-face {
+    font-family: 'pontano_sansregular';
+    src: url('font/pontanosans-regular-webfont.eot');
+    src: url('font/pontanosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/pontanosans-regular-webfont.woff') format('woff'),
+    url('font/pontanosans-regular-webfont.ttf') format('truetype'),
+    url('font/pontanosans-regular-webfont.svg#pontano_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .floatLeft{
     float:left;
 }
@@ -1504,8 +1516,16 @@ div#infographic-right-content{
 			font-size: 1.25em;
 		}
 
-        #logo #logo_text {
-            margin-left: 15px;
+        #logo .logo_text {
+            left: 75px;
+            font-family: pontano_sansregular;
+            font-size: 14pt;
+            letter-spacing: 4px;
+            color: #fff;
+            position: absolute;
+            width: 300px;
+            top: -10px;
+            text-align: left;
         }
 	
 	#nav {
