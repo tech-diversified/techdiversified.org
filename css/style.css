@@ -145,21 +145,11 @@ body #intro ul li a:hover{
 }
 
 #bodyWrapper{
-    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
-    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
-    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
-    transition: all .5s linear 0s;
+
 }
 
 #bodyWrapper.rightMenu{
-    -moz-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details wrapper */
-    -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
-    -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
-    transition: all .5s linear 0s;
-    -webkit-transform: translateX(-240px);
-    transform: translateX(-240px);
-    -ms-transform:translateX(-240px);
-    -moz-transform:translateX(-240px);
+
 }
 
 .sourceSemibold{
@@ -228,11 +218,21 @@ body #intro ul li a:hover{
     cursor:pointer;
 }
 
+
+
 #sideBarToggle.threeLines{
     position: absolute;
     right: 25px;
     top: 15px;
     cursor:pointer;
+    opacity: 0;
+}
+
+.active #sideBarToggle.threeLines{
+    opacity: 1;
+    transition: opacity .5s ease-in-out .3s;
+    -moz-transition: opacity .5s ease-in-out .3s;
+    -webkit-transition: opacity .5s ease-in-out .3s;
 }
 
 .threeLines .horizontal-bar{
