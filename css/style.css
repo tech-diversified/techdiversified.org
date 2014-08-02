@@ -203,19 +203,16 @@ body #intro ul li a:hover{
     float: right;
     padding: 0 20px;
     margin-left: 20px;
-}
-
-.upcomingEvents a{
     color: inherit;
     text-decoration: none;
 }
-
 
 #headerMenuToggle.threeLines{
     position: fixed;
     right: 25px;
     top: 15px;
     cursor:pointer;
+    z-index: 2;
 }
 
 
@@ -1530,34 +1527,19 @@ div#infographic-right-content{
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header {
-		position: fixed;
-        opacity: 0;
-		z-index: 2;
-		left: 0;
-		top: 0;
-		width: 100%;
-		background: #fff;
-		background: rgba(58,64,76,0);
-		height: 3em;
-		line-height: 3em;
-	}
-
-    .inactive #header {
-        opacity: 1;
-    }
 	
 	body {
 		 /*padding-top: 3em;*/
 	}
 
 	#logo {
-		position: absolute;
+		position: fixed;
 		left: 1.7em;
 		top: 1.3em;
 		height: 3em;
 		line-height: 3em;
 		letter-spacing: -1px;
+        z-index: 2;
 	}
 	
 		#logo a {
