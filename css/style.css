@@ -226,6 +226,9 @@ body #intro ul li a:hover{
     top: 15px;
     cursor:pointer;
     opacity: 0;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
 }
 
 .active #sideBarToggle.threeLines{
