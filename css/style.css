@@ -287,6 +287,8 @@ section#headerScrollWatch {
     -webkit-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
     -ms-transition: all .5s linear 0s; /* This is the animation TO THE RIGHT for the details */
     transition: all .5s linear 0s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /********/
@@ -526,8 +528,6 @@ div#infographic-right-content{
 	}
 
 	a {
-		color: #98c593;
-
 		-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;

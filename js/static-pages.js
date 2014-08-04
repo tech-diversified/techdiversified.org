@@ -210,16 +210,12 @@ $( document ).ready(function() {
     $("#rightSideBar").toggleClass("active");
   });
 
-  //FAQ Stuff
-  $(".question").on("click", function (evt) {
-    //Close all answers and slide open this question's child answer node.
-    $(".answer").hide();
-
-  });
-
   //Load the menu
   loadMenu();
   loadFooter();
+
+  //For FAQ
+  SetupFAQExpand();
 });
 
 //called after screen fades in
@@ -262,4 +258,11 @@ function loadFooter() {
   });
 }
 
-
+//Setup FAQ sections to be clickable
+function SetupFAQExpand(){
+  $(".question").click(function(evt){
+      //First close any expanded divs
+    $(".question").removeClass("active");
+    $(evt.currentTarget).addClass("active");
+  });
+}

@@ -39,10 +39,23 @@
     font-family: source_sans_prosemibold;
     font-size: 23px;
     padding-left: 10px;
+    margin: 20px 0;
+    cursor:pointer;
 }
 
 #staticWrapper div.answer {
+    height: 0px;
     display: none;
+    padding: 0;
+    color: #000;
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+#staticWrapper div.question.active div.answer{
+    height: auto;
+    padding-top: 15px;
+    display: block;
 }
 
 #staticWrapper div.bio-container{
@@ -60,4 +73,8 @@
 
 #staticWrapper li.team-member{
     margin: 32px 0;
+}
+
+#headerMenuToggle.threeLines, #logo {
+    position: absolute;
 }
