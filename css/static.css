@@ -4,6 +4,43 @@
 
 #staticWrapper header{
     margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+#staticWrapper .static-header {
+    padding: 22px;
+    background-color: #f0f0f0;
+}
+
+#staticWrapper .subHeader {
+    font-style: italic;
+}
+
+#staticWrapper .static-tabs {
+    background-color: #f0f0f0;
+}
+
+#staticWrapper .static-tabs .tab{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #959595;
+    font-size: 32px;
+    background-color: #f0f0f0;
+    cursor:pointer;
+}
+
+
+#staticWrapper .panel{
+    display:none;
+}
+
+#staticWrapper .panel.active{
+    display: block;
+}
+
+#staticWrapper .tab.active{
+    color: #e9746d;
+    background-color: #fff;
 }
 
 #staticWrapper h2{
