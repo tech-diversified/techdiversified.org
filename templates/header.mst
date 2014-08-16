@@ -1,0 +1,3 @@
+{{#headerItems}}
+	<li><a href="{{url}}">{{title}}</a></li>
+{{/headerItems}}

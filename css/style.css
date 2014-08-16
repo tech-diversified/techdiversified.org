@@ -1557,6 +1557,10 @@ div#infographic-right-content{
             top: -10px;
             text-align: left;
         }
+
+        #logo a img {
+            width: 60px;
+        }
 	
 	#nav {
 

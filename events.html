@@ -27,7 +27,7 @@
 <!-- Nav -->
 <nav id="nav" style="top: 0px;position:relative">
     <!-- Logo -->
-    <h1 id="logo"><a href="http://techdiversified.org"><img src="images/td_logo.png"/><span class="logo_text">tech diversified</span></a>
+    <h1 id="logo"><a href="http://techdiversified.org"><img src="images/td_logo_hires.png"/><span class="logo_text">tech diversified</span></a>
     </h1>
 
     <div id="headerMenuToggle" class="threeLines" style="float:right" class="clearfix">
@@ -35,9 +35,7 @@
         <div class="horizontal-bar"></div>
         <div class="horizontal-bar"></div>
     </div>
-    <ul>
-        <li><a href="#intro">Apply Now</a></li>
-        <li><a href="#one">Donate Now</a></li>
+    <ul id="headerItems">
     </ul>
 </nav>
 
@@ -60,27 +58,17 @@
             <h2>Upcoming Events</h2>
         </header>
         <div class="content clearfix">
-            <div class="left half-width textBlock">
+            <div class="half-width textBlock">
                 <p>
-                    Tech Diversified is a Seattle-based nonprofit program aimed at improving representation in the tech industry for people of color.  We provide adults (18+) with free resources such as technical workshops, career counseling, one-on-one mentoring and networking meet-ups.
+                    Tech Diversified is a Seattle-based nonprofit program striving to improve representation in the tech industry for people of color.  We provide adults (18+) with free resources such as technical workshops, career counseling, one-on-one mentoring and networking meet-ups.
                 </p>
             </div>
-            <div class="left half-width textBlock">
-                <p>
-                    Tech Diversified is a quarterly software developer and web design-training program. Classes will be held once (maybe twice) a week for approximately 16 weeks. The program will combine evening in-classroom instruction, hands-on projects, mentorship, guest lecturers, and career counseling. At the end of quarter, students will have real-world insight and exposure to the possibilities in software development and web design
-                </p>
+            <div class="textBlock">
+                <table id="eventList" style="width:auto;">
+
+                </table>
             </div>
         </div>
-        <div class="center">
-            <div class="sourceRegular" style="font-size: 32px;">Workshops focus on topics such as: </div>
-            <img src="images/program_topics.png" alt="Program topics" />
-        </div>
-        <div class="content">
-            <p>
-                Tech Diversified is nonprofit software development school in Seattle, Washington. Our mission is to reach out to and expose underrepresented communities to career opportunities in the tech industry. Our goal is to build a more diverse workforce by way of inspiring people of color that may not have previous coding experience or computer science education and demonstrating through a multifaceted approach of support - that a career in tech in possible.
-            </p>
-        </div>
-        <p></p>
     </div>
 </section>
 
@@ -103,4 +91,40 @@
 </footer>
 
 </body>
+<script>
+    $( document ).ready(function() {
+        loadEventsFromMeetup();
+    });
+
+
+    function loadEventsFromMeetup() {
+
+        var url = 'https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=tech-diversified&page=20&key=5350685a4d783d675e4927440431a6c';
+
+        $.ajax({ url: url,
+                 crossDomain: true,
+                 jsonp: "callback",
+            dataType: "jsonp",
+
+        }).success(function(data) {
+            if (data.results.length == 0) {
+
+            }else{
+                //Add date formatting functions here
+                $.each(data.results, function(idx, item){
+                    item.DateFormatter = function() {
+                        return function(rawDate, render) {
+                            return new Date(parseInt(render(rawDate))).toGMTString();
+                        }
+                    }
+                });
+
+                $.get('templates/eventList.mst', function(template) {
+                    var rendered = Mustache.render(template, data);
+                    $('#eventList').html(rendered);
+                });
+            }
+        });
+    }
+</script>
 </html>

@@ -115,3 +115,12 @@
 #headerMenuToggle.threeLines, #logo {
     position: absolute;
 }
+
+
+/**
+team photos
+**/
+
+#staticWrapper .photo img {
+    width: 240px;
+}

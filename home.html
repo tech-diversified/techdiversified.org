@@ -36,7 +36,7 @@
 <div id="bodyWrapper">
 
 <!-- Logo -->
-<div id="logo"><a href="http://techdiversified.org"><img src="images/td_logo.png"/><span class="logo_text">tech diversified</span></a>
+<div id="logo"><a href="http://techdiversified.org"><img src="images/td_logo_hires.png"/><span class="logo_text">tech diversified</span></a>
 </div>
 <div id="headerMenuToggle" class="threeLines" style="float:right" class="clearfix">
     <div class="horizontal-bar"></div>
@@ -57,7 +57,7 @@
 
 
 <section id="headerScrollWatch">
- My Stuff is in here.
+a
 </section>
 
 <!-- Intro -->
@@ -65,21 +65,18 @@
 
 
     <div id="initialHeader">
-        <!--<h1 id="logo"><a href="http://techdiversified.org"><img src="images/td_logo.png"/><img id="logo_text"-->
-                                                                                               <!--src="images/td_logo_text.png"/></a>-->
-        <!--</h1>-->
+
     </div>
 
 
     <div class="content container small">
         <header>
-            <h2>LEARN TO CODE update</h2>
+            <h2>PROMOTING DIVERSITY IN TECH</h2>
         </header>
         <p>Tech Diversified connects people of color to software development through tuition-free classes, networking and professional development</p>
         <ul>
-            <li><a href="signup.html">Sign Up Now</a></li>
-            <li><a href="getinvolved.html">Get Involved</a></li>
             <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="getinvolved.html">Get Involved</a></li>
         </ul>
         <footer>
             <a href="#one" class="button style2 down">More</a>
@@ -91,7 +88,7 @@
 <section id="one" class="main style2 left dark fullscreen">
     <div class="content box style2">
         <header>
-            <h2>Our Mission</h2>
+            <h2>What is Tech Diversified?</h2>
         </header>
         <p>Tech Diversified is a nonprofit organization encouraging people of color to seek out employment opportunities in the technology sector by offering a blend of technical training, career counseling and mentoring to build a more diverse tech sector.</p>
     </div>
@@ -310,4 +307,28 @@
 </footer>
 </div>
 </body>
+<script>
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Ethnicity', 'Google', 'Yahoo', 'Twitter'],
+            ['Two or more races', 1, 1, 2],
+            ['Black',  2,      2, 1],
+            ['Hispanic',  3,      4, 3],
+            ['Asian',  30,       39, 34],
+            ['White',  61,      50, 58]
+        ]);
+
+        var options = {
+            title: 'Diversitiy Figures by Ethnicity',
+            hAxis: {title: 'Ethnicity Groups', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+    }
+</script>
 </html>

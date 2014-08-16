@@ -213,6 +213,7 @@ $( document ).ready(function() {
   //Load the menu
   loadMenu();
   loadFooter();
+  loadHeader();
 
   //For FAQ
   SetupFAQExpand();
@@ -245,7 +246,7 @@ function loadMenu() {
 }
 
 
-//Load the right menu of each page
+//Load the footer of each page
 function loadFooter() {
   //Get the JSON with the contents of the menu.
   $.getJSON("js/template_footer.js", function(json){
@@ -258,6 +259,19 @@ function loadFooter() {
   });
 }
 
+//load the header of each page
+function loadHeader() {
+  //Get the JSON with the contents of the menu.
+  $.getJSON("js/template_header.js", function(json){
+
+    //Get the template
+    $.get('templates/header.mst', function(template) {
+      var rendered = Mustache.render(template, json);
+      $('#headerItems').html(rendered);
+    });
+  });
+}
+
 //Setup FAQ sections to be clickable
 function SetupFAQExpand(){
   $(".question").click(function(evt){
@@ -266,3 +280,5 @@ function SetupFAQExpand(){
     $(evt.currentTarget).addClass("active");
   });
 }
+
+
