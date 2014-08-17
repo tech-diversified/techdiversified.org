@@ -308,27 +308,27 @@ a
 </div>
 </body>
 <script>
-    google.setOnLoadCallback(drawChart);
-    function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-            ['Ethnicity', 'Google', 'Yahoo', 'Twitter'],
-            ['Two or more races', 1, 1, 2],
-            ['Black',  2,      2, 1],
-            ['Hispanic',  3,      4, 3],
-            ['Asian',  30,       39, 34],
-            ['White',  61,      50, 58]
-        ]);
-
-        var options = {
-            title: 'Diversitiy Figures by Ethnicity',
-            hAxis: {title: 'Ethnicity Groups', titleTextStyle: {color: 'red'}}
-        };
-
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-
-        chart.draw(data, options);
-
-    }
+//    google.setOnLoadCallback(drawChart);
+//    function drawChart() {
+//
+//        var data = google.visualization.arrayToDataTable([
+//            ['Ethnicity', 'Google', 'Yahoo', 'Twitter'],
+//            ['Two or more races', 1, 1, 2],
+//            ['Black',  2,      2, 1],
+//            ['Hispanic',  3,      4, 3],
+//            ['Asian',  30,       39, 34],
+//            ['White',  61,      50, 58]
+//        ]);
+//
+//        var options = {
+//            title: 'Diversitiy Figures by Ethnicity',
+//            hAxis: {title: 'Ethnicity Groups', titleTextStyle: {color: 'red'}}
+//        };
+//
+//        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+//
+//        chart.draw(data, options);
+//
+//    }
 </script>
 </html>
