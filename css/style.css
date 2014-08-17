@@ -1759,6 +1759,7 @@ div#infographic-right-content{
 		color: #999;
 		color: rgba(185,186,187,0.5);
 		overflow: hidden;
+        margin-top: -5em;
 	}
 
 		#footer a {

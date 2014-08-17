@@ -217,6 +217,9 @@ $( document ).ready(function() {
 
   //For FAQ
   SetupFAQExpand();
+
+  //For Program
+  SetupProgramButtons();
 });
 
 //called after screen fades in
@@ -278,6 +281,25 @@ function SetupFAQExpand(){
       //First close any expanded divs
     $(".question").removeClass("active");
     $(evt.currentTarget).addClass("active");
+  });
+}
+
+//Setup Program buttons to be clickable
+function SetupProgramButtons(){
+  $(".tab").click(function(evt){
+    //get number of clicked tab
+    var number = evt.currentTarget.id.replace("tab", "");
+
+    //First close any active buttons
+    $("#program .tab").removeClass("active");
+    $("#program .panel").removeClass("active");
+
+
+    //Set active tab
+    $(evt.currentTarget).addClass("active");
+
+    //Find corresponding panel, make active
+    $("#program #panel" + number).addClass("active");
   });
 }
 

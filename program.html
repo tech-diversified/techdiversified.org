@@ -21,8 +21,9 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
 </head>
-<body>
+<body id="program">
 
+<div class="expando">
 
 <!-- Nav -->
 <nav id="nav" style="top: 0px;position:relative">
@@ -55,12 +56,12 @@
 <section id="staticWrapper" class="main">
     <div class="static-inner">
         <header>
-            <h2>About the Program</h2>
+            <h2>About our Program</h2>
         </header>
         <div class="content clearfix">
             <div class="left textBlock">
                 <p>
-                    Tech Diversified is a Seattle-based nonprofit program aimed at improving representation in the tech industry for people of color.  We provide adults (18+) with free resources such as technical workshops, non-technical workshops, career counseling, one-on-one mentoring and networking meet-ups.  Our goal is to empower people just starting out with the necessary tools to make informed decisions about seeking future careers in the technology field, and to help get them on the right track.  We are also an ecosystem for "experienced" tech professionals to network and become mentors.
+                    Tech Diversified is a Seattle-based nonprofit program focused on improving representation in the tech industry for people of color.  We provide adults (18+) with free resources such as technical workshops, non-technical workshops, career counseling, one-on-one mentoring and networking meet-ups. 
                 </p>
             </div>
             <!--<div class="left half-width textBlock">-->
@@ -69,18 +70,106 @@
                 <!--</p>-->
             <!--</div>-->
         </div>
-        <div class="center">
-            <div class="sourceRegular" style="font-size: 32px;">Workshops focus on topics such as: </div>
-            <img src="images/program_topics.png" alt="Program topics" />
+        <div class="buttonTable">
+            <div id="buttonPanel">
+                <a class="tab active" id="tab1">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-technical"></span>
+                      <span class="buttonText">Technical Workshops</span>
+                    </span>
+                </a>
+                <a class="tab" id="tab2">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-nontechnical"></span>
+                      <span class="buttonText">Non-tech Workshops</span>
+                    </span>
+                </a>
+                <a class="tab" id="tab3">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-careercounseling"></span>
+                      <span class="buttonText">Career Counseling</span>
+                    </span>
+                </a>
+                <a class="tab" id="tab4">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-oneonone"></span>
+                      <span class="buttonText">One-on-one Mentoring</span>
+                    </span>
+                </a>
+                <a class="tab" id="tab5">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-openlab"></span>
+                      <span class="buttonText">Open Lab Study Groups</span>
+                    </span>
+                </a>
+                <a class="tab" id="tab6">
+                    <span class="buttonContent">
+                      <span class="buttonIcon icon-meetup"></span>
+                      <span class="buttonText">Meetup Group</span>
+                    </span>
+                </a>
+            </div>
         </div>
         <div class="content">
+            <div id="panel1" class="panel active">
             <p>
-                Tech Diversified is nonprofit software development school in Seattle, Washington. Our mission is to reach out to and expose underrepresented communities to career opportunities in the tech industry. Our goal is to build a more diverse workforce by way of inspiring people of color that may not have previous coding experience or computer science education and demonstrating through a multifaceted approach of support - that a career in tech in possible.
+                Our series of free technical workshops are taught by experienced industry professionals with the goal of familiarizing participants with modern programming concepts.  We do not currently have the capacity to fully teach people how to code; rather, we want to give participants enough information to decide whether or not to pursue a particular language or framework further.
             </p>
+                <ul>
+                    <li>Introduction to JavaScript</li>
+                    <li>Introduction to GitHub</li>
+                    <li>Introduction to Node.js</li>
+                    <li>Introduction to Mobile Development</li>
+                    <li>Introduction to User Experience (UX) and User Interface (UI) Design</li>
+                    <li>Learn the Lingo</li>
+                    <li>Introduction to Databases</li>
+                    <li>Learning how to troubleshoot problems</li>
+                    <li>Introduction to Geographic Information Systems (GIS)</li>
+                    <li>Create and set up a web page from scratch</li>
+                </ul>
+
+            </div>
+            <div id="panel2" class="panel">
+            <p>
+                Perhaps more important to newcomers are non-technical aspects of the technology industry.  Some of the most common requests we get are to describe what to expect in an interview or discuss what it is like to work with a team of developers, or even tips on writing a resume. Our series of non-technical workshops will explain business and communication concepts that can be sometimes overlooked, yet could be the deciding factor between you and another candidate seeking the same job.
+            </p>
+                <ul>
+                <li>Introduction to Entrepreneurship</li>
+                <li>Team Communication</li>
+                <li>Understanding software project lifecycle</li>
+                <li>Project Estimation</li>
+                <li>Introduction to Startups</li>
+                <li>Business 101</li>
+            </ul>
+            </div>
+            <div id="panel3" class="panel">
+                <p>
+                    Tech Diversified’s network includes a professional career counselor, who will be able to help you form a strategy for achieving your goals.  In today's competitive job market,  having a professional assess your skill sets, review your resume, and give overall advice is a tremendous advantage.
+                </p>
+            </div>
+            <div id="panel4" class="panel">
+                <p>
+                    Tech Diversified has a growing network of mentors who are eager to connect with motivated individuals.  Our goal is to match you with a professional who works in your area of interest.  The one-on-one time can be a valuable opportunity for you to ask questions, get advice, review your portfolio, or find out what it is really like to work in the field.
+                </p>
+            </div>
+            <div id="panel5" class="panel">
+                <p>
+                    Tech Diversified will periodically have an open lab at their space in Ballard staffed by volunteers with knowledge of a variety of programming languages and skills.  We encourage you to stop by with your pet project and ask for help (or just show us what you’re up to!).  Think of it as a place to hang out and ask questions, or just talk shop.
+                </p>
+            </div>
+            <div id="panel6" class="panel">
+                <p>
+                    The Tech Diversified <a href="http://www.meetup.com/Tech-Diversified" target="_blank">Meetup</a> group meets monthly at our workshop space in Ballard. 
+                    This Meetup attracts people with a range of interests and experience levels - from those just starting out to people with 20 years of development experience. 
+                    We also see educators, marketing and advertising professionals, entrepreneurs and college students.  It’s a great place to come meet other people with similar interests and an excellent opportunity to network with industry professionals.
+                </p>
+            </div>
         </div>
-        <p></p>
     </div>
 </section>
+
+
+</div>
 
 <!-- Footer -->
 <footer id="footer">
@@ -99,6 +188,5 @@
     </ul>
 
 </footer>
-
 </body>
 </html>
