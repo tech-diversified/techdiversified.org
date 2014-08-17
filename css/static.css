@@ -149,7 +149,7 @@ Program buttons
 }
 
 #buttonPanel span.buttonText {
-    width: 65%;
+    width: 95%;
     display: inline-block;
     line-height: 25px;
 }
@@ -173,7 +173,7 @@ Program buttons
 
 #buttonPanel a{
     display: table-cell;
-    width: 16.66667%;
+    font-size: 16px;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -306,8 +306,13 @@ body, html{
     list-style: inherit;
     margin-left: 35px;
     display: inline-block;
+    font-size: 0.9em;
 }
 
 #program .list li {
     width: 80%;
+}
+
+#program #workshopExamples{
+    font-size: 25px;
 }
