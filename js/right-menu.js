@@ -8,6 +8,7 @@
     { "url": "signup.html", "title": "Join Us" },
     { "url": "getinvolved.html", "title": "Help Us" },
     { "url": "team.html", "title": "Our Team" },
-    { "url": "faq.html", "title": "FAQ" }
+    { "url": "faq.html", "title": "FAQ" },
+    { "url": "contact.html", "title": "Contact Us" }
   ]
 }

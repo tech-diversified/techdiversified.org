@@ -130,8 +130,14 @@ team photos
 Program buttons
 **/
 
+#program .horizontal-bar{
+    border-top: 1px solid #3a404c;
+}
+
 .buttonTable{
     display: table;
+    padding-top: 17px;
+    margin: 0 100px;
 }
 
 #buttonPanel{
@@ -142,12 +148,27 @@ Program buttons
 
 }
 
+#buttonPanel span.buttonText {
+    width: 65%;
+    display: inline-block;
+    line-height: 25px;
+}
+
 #buttonPanel span.buttonIcon{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     margin: 0 auto 8px;
     display: block;
-    font-size: 30px;
+    font-size: 45px;
+}
+
+#buttonPanel span.buttonIcon.icon-meetup{
+    font-size: 75px;
+    width: 75px;
+}
+
+#program .content{
+    margin-top: 40px;
 }
 
 #buttonPanel a{
@@ -262,6 +283,7 @@ Program buttons
 
 #program .panel{
     display:none;
+    margin: 0 100px;
 }
 
 #program .panel.active {
@@ -278,4 +300,14 @@ body, html{
 
 .static-inner{
     margin-bottom: 5em !important;
+}
+
+#staticWrapper .list{
+    list-style: inherit;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+#program .list li {
+    width: 80%;
 }
