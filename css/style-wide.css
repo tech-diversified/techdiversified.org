@@ -15,7 +15,7 @@
 			}
 			
 				.main.style2 .content {
-					width: 40%;
+					width: 60%;
 				}
 			
 					.main.style2.right .content {
@@ -29,5 +29,5 @@
 					}
 
 						.main.style2.inactive.left .content {
-							left: -40%;
+							left: -60%;
 						}
