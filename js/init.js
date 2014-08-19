@@ -284,38 +284,6 @@
                                                 }
                                             });
 									
-										// Work
-											$('#work')
-												.scrollwatch({
-													delay:		25,
-													range:		0.6,
-													anchor:		'center',
-													init:		function(t) { t.find('.row.images').addClass('inactive'); },
-													on:			function(t) {
-																	var	rows = t.find('.row.images'),
-																		length = rows.length,
-																		n = 0;
-																	
-																	rows.each(function() {
-																		var row = $(this);
-																		window.setTimeout(function() {
-																			row.removeClass('inactive');
-																		}, 100 * (length - n++));
-																	});
-																},
-													off:		function(t) {
-																	var	rows = t.find('.row.images'),
-																		length = rows.length,
-																		n = 0;
-																	
-																	rows.each(function() {
-																		var row = $(this);
-																		window.setTimeout(function() {
-																			row.addClass('inactive');
-																		}, 100 * (length - n++));
-																	});
-																}
-												});
 
 										// Contact
 											$('#brickwall')
