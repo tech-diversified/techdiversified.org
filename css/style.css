@@ -52,6 +52,10 @@ body #intro ul li a:hover{
     color: #111 !important;
 }
 
+.width-restriction{
+    width: 960px;
+}
+
 #bodyWrapper{
 
 }
@@ -95,6 +99,7 @@ body #intro ul li a:hover{
 #infographic-table{
     padding: 20px 0;
     height: 25em;
+    max-width: 960px;
 }
 
 .leftText{
@@ -250,7 +255,7 @@ section#headerScrollWatch {
 
 
 #two{
-    margin: 0 30px;
+    margin: 0 auto;
     padding: 2em 0 !important;
 }
 
@@ -351,7 +356,7 @@ section#headerScrollWatch {
 }
 
 #our_program{
-    margin: 0 30px;
+    margin: 0 auto;
     padding: 3em 0 !important;
 }
 
@@ -370,6 +375,8 @@ section#headerScrollWatch {
 
 #our_program_wrapper .table_title, #our_program_wrapper .table_icon {
     color: #e9746d;
+    font-size: 21px;
+    text-transform: uppercase;
 }
 
 #our_program_wrapper .table_message {
