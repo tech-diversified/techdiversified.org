@@ -156,3 +156,20 @@
 .icon-technical:before {
     content: "h";
 }
+
+@font-face {
+    font-family: "m";
+    src:url("font/m.eot");
+    src:url("font/m.eot?#iefix") format("embedded-opentype"),
+    url("font/m.woff") format("woff"),
+    url("font/m.ttf") format("truetype"),
+    url("font/m.svg#m") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.icon-meetup-m:before {
+    content: "a";
+    font-family: "m" !important;
+}

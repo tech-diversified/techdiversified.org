@@ -22,6 +22,10 @@
 						left: 40%;
 					}
 
+                    .main.style2.right .content {
+                        left: 40%;
+                    }
+
 				.main.style2.inactive {
 				}
 
