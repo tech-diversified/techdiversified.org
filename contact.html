@@ -106,9 +106,9 @@
                             <label id="tfa_4-L" for="tfa_4" class="label preField reqMark">E-mail address:</label><br><div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="" placeholder="" class="validate-email required"></div>
                         </div>
                         <div id="tfa_22-D" class="oneField    ">
-                            <label id="tfa_22-L" for="tfa_22" class="label preField ">What are you interested in?</label><br><div class="inputWrapper"><select id="tfa_22" name="tfa_22" class=""><option value="">Please select...</option>
-                            <option value="tfa_23" id="tfa_23" data-conditionals="#tfa_6" class="">Registration</option>
-                            <option value="tfa_24" id="tfa_24" data-conditionals="#tfa_35" class="">Volunteering</option></select></div>
+                            <label id="tfa_22-L" for="tfa_22" class="label preField ">What would you like to do?</label><br><div class="inputWrapper"><select id="tfa_22" name="tfa_22" class=""><option value="">Please select...</option>
+                            <option value="tfa_23" id="tfa_23" data-conditionals="#tfa_6" class="">Register</option>
+                            <option value="tfa_24" id="tfa_24" data-conditionals="#tfa_35" class="">Volunteer</option></select></div>
                         </div>
                         <div id="tfa_6-D" class="oneField    ">
                             <label id="tfa_6-L" for="tfa_6" class="label preField ">Which offerings are you interested in?</label><br><div class="inputWrapper"><span id="tfa_6" class="choices vertical " data-condition="`#tfa_23`"><span class="oneChoice"><input type="checkbox" value="tfa_7" class="" id="tfa_7" name="tfa_7"><label class="label postField" id="tfa_7-L" for="tfa_7">Networking</label></span><span class="oneChoice"><input type="checkbox" value="tfa_8" class="" id="tfa_8" name="tfa_8"><label class="label postField" id="tfa_8-L" for="tfa_8">Working with a mentor</label></span><span class="oneChoice"><input type="checkbox" value="tfa_9" class="" id="tfa_9" name="tfa_9"><label class="label postField" id="tfa_9-L" for="tfa_9">Open lab time</label></span><span class="oneChoice"><input type="checkbox" value="tfa_10" class="" id="tfa_10" name="tfa_10"><label class="label postField" id="tfa_10-L" for="tfa_10">Technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_11" class="" id="tfa_11" name="tfa_11"><label class="label postField" id="tfa_11-L" for="tfa_11">Non-technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_12" class="" id="tfa_12" name="tfa_12"><label class="label postField" id="tfa_12-L" for="tfa_12">Career counseling</label></span></span></div>
@@ -161,4 +161,32 @@
 </footer>
 
 </body>
+<script>
+    //Prefill the Select option based on querystring args
+
+    $(document).ready(function(){
+        var vars = [], hash;
+        var q = document.URL.split('?')[1];
+        if(q != undefined){
+            q = q.split('&');
+            for(var i = 0; i < q.length; i++){
+                hash = q[i].split('=');
+                vars.push(hash[1]);
+                vars[hash[0]] = hash[1];
+            }
+        }
+
+        if(vars){
+            if(vars.mode){
+                if(vars.mode.toLowerCase() === "member"){
+                    $("#tfa_22").val("tfa_23");
+                }
+                else if(vars.mode.toLowerCase() === "volunteer"){
+                    $("#tfa_22").val("tfa_24");
+                }
+            }
+        }
+    })
+
+</script>
 </html>

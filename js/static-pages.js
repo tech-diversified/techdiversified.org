@@ -224,8 +224,6 @@ $( document ).ready(function() {
 
 //called after screen fades in
 function postLoad(){
-
-
     //Manually check to see if we start out past 280px.  If so, then show the top banner.
     if(window.scrollY > 280){
         //Turn on class
@@ -291,16 +289,17 @@ function SetupProgramButtons(){
     var number = evt.currentTarget.id.replace("tab", "");
 
     //First close any active buttons
-    $("#program .tab").removeClass("active");
-    $("#program .panel").removeClass("active");
+    $(".tab").removeClass("active");
+    $(".panel").removeClass("active");
 
 
     //Set active tab
     $(evt.currentTarget).addClass("active");
 
     //Find corresponding panel, make active
-    $("#program #panel" + number).addClass("active");
+    $("#panel" + number).addClass("active");
   });
+
 }
 
 

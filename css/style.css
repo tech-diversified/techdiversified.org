@@ -56,6 +56,10 @@ body #intro ul li a:hover{
     width: 960px;
 }
 
+.auto-margin{
+    margin: 0 auto;
+}
+
 #bodyWrapper{
 
 }
@@ -380,7 +384,7 @@ section#headerScrollWatch {
 }
 
 #our_program_wrapper .table_message {
-    width: 20em;
+    width: 15em;
     margin-right: 40px;
 }
 
