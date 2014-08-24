@@ -276,9 +276,9 @@ function loadHeader() {
 //Setup FAQ sections to be clickable
 function SetupFAQExpand(){
   $(".question").click(function(evt){
-      //First close any expanded divs
-    $(".question").removeClass("active");
-    $(evt.currentTarget).addClass("active");
+    $(evt.currentTarget).toggleClass("active");
+    //First close any expanded divs
+    //$(".question").removeClass("active");
   });
 }
 
