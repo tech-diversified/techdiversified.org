@@ -39,6 +39,7 @@ body #intro ul li a{
     position: relative;
     min-width: 185px;
     background: none;
+    margin: 0 25px;
 
     border: 2px solid #fff;
     -webkit-transition: all 500ms ease;
@@ -169,6 +170,7 @@ section#headerScrollWatch {
     width: 100%;
 }
 
+
 /*** right sliding panel ***/
 #rightSideBar{
     width: 240px;
@@ -270,10 +272,13 @@ section#headerScrollWatch {
 
 
 #lisa{
-    width: 50%;
+    height: 550px;
     margin-bottom: -9px;
 }
 
+.friends{
+    width: 385px;
+}
 
 
 /* Section 4 */
@@ -882,11 +887,15 @@ section#headerScrollWatch {
 			}
 			
 				.main.style1 h2 {
-                    font-family: 'source_sans_proregular';
+                    font-family: 'source_sans_prolight';
 					font-size: 2.5em;
 					line-height: 1em;
 					letter-spacing: 0px;
 				}
+
+                .main.style1 .tagline{
+                    font-size: 20px;
+                }
 				
 				.main.style1 .content {
 					opacity: 1.0;
@@ -985,7 +994,7 @@ section#headerScrollWatch {
 				}
 
         .main.style4 {
-            padding: 2em 0 0 0;
+            padding: 45px 0 0 0;
         }
 
 	/* Dark */

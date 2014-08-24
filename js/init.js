@@ -323,8 +323,6 @@ jQuery(function () {
 
   // Forms
   if (skel.vars.IEVersion < 10)
-    $('form').formerize();
-
   // Gallery
   $('.gallery').poptrox(_settings.poptrox);
 
@@ -384,8 +382,8 @@ jQuery(function () {
           //The first header shown.
           $('#headerScrollWatch')
             .scrollwatch({
-              delay: 50,
-              range: 0.5,
+              delay: 1,
+              range: 0.6,
               anchor: 'center',
               init: function (t) {
                 //t.addClass('inactive');
@@ -572,4 +570,10 @@ function loadFooter() {
       $('#footerItems').html(rendered);
     });
   });
+}
+
+function scrollToTarget(target){
+  var offset = $(target).offset();
+  var scrollto = offset.top - $("#nav").height(); // height of the #nav bar
+  $('html, body').animate({scrollTop:scrollto}, 800);
 }
