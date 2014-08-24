@@ -1666,9 +1666,8 @@ section#headerScrollWatch {
 /*********************************************************************************/
 
 #brickwall {
-    background: url('../images/brickwall.png') no-repeat center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../images/brick_bg.jpg') no-repeat center center;
+    background-repeat: repeat;
     min-height: 55em;
 }
 			
