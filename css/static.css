@@ -274,8 +274,8 @@ body, html{
     font-size: 25px;
 }
 
-#getinvolved .green-button{
-    background-color: #59cca9;
+#getinvolved .green-button, .wForm .primaryAction{
+    background-color: #59cca9 !important;
     padding: 25px 60px;
     color: #fff;
     display: inline-block;
@@ -297,4 +297,17 @@ a:hover{
 
 #eventList td {
     padding-right: 25px;
+}
+
+
+input:focus {
+    outline:none;
+}
+
+#thanks #staticWrapper header{
+    margin-left: 0px;
+}
+
+#thanks #staticWrapper .content{
+    margin-top: 25px;
 }
