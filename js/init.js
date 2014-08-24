@@ -365,8 +365,8 @@ jQuery(function () {
 
           $('.main.style2')
             .scrollwatch({
-              delay: 50,
-              range: 0.5,
+              delay: 0,
+              range: 0.7,
               anchor: 'center',
               init: function (t) {
                 t.addClass('inactive');

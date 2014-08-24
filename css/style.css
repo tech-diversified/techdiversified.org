@@ -104,7 +104,8 @@ body #intro ul li a:hover{
 #infographic-table{
     padding: 20px 0;
     height: 25em;
-    max-width: 960px;
+    max-width: 1000px;
+    margin-left: -50px;
 }
 
 .leftText{
@@ -252,17 +253,25 @@ section#headerScrollWatch {
 
 .infographic-subtitle{
     margin: 25px 0;
+    font-size: 20px;
 }
 
 #infographic-right-content{
     margin: 0 auto;
 }
 
+.horizontal-bar{
+    border-top: 1px solid #3a404c;
+}
 
+.footnotes {
+    margin-top: 25px;
+    font-size: 12px;
+}
 
 #two{
     margin: 0 auto;
-    padding: 2em 0 !important;
+    padding: 60px 0 !important;
 }
 
 /********/
@@ -330,6 +339,7 @@ section#headerScrollWatch {
 
 .getInvolvedWrapper ul{
     list-style: none;
+    text-align: center;
 }
 
 .getInvolvedWrapper ul li{
@@ -390,7 +400,7 @@ section#headerScrollWatch {
 
 #our_program_wrapper .table_message {
     width: 15em;
-    margin-right: 40px;
+    margin-right: 65px;
 }
 
 #our_program_wrapper .table_icon {
@@ -975,7 +985,7 @@ section#headerScrollWatch {
 						}
 		
 			.main.style3 {
-				padding: 6em 0 6em 0;
+				padding: 40px 0;
 			}
 
 				.main.style3 .content {
