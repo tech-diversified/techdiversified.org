@@ -1498,8 +1498,8 @@ section#headerScrollWatch {
 	#logo {
 		position: fixed;
 		left: 1.7em;
-		top: 1.3em;
-		height: 3em;
+        top: 20px;
+		height: 75px;
 		line-height: 3em;
 		letter-spacing: -1px;
         z-index: 2;
