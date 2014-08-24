@@ -294,3 +294,7 @@ a:hover{
 #footer .icon-meetup-m{
     font-size: 20px;
 }
+
+#eventList td {
+    padding-right: 25px;
+}
