@@ -82,7 +82,7 @@
 
 #staticWrapper div.question {
     color: #e9746d;
-    font-family: source_sans_prosemibold;
+    font-family: source_sans_proregular;
     font-size: 23px;
     padding-left: 10px;
     margin: 20px 0;
@@ -94,7 +94,7 @@
     padding: 0;
     color: #000;
     margin-left: 35px;
-    font-size: 16px;
+    font-size: 18px;
     overflow: hidden;
     font-family: 'source_sans_prolight';
 
@@ -296,7 +296,7 @@ a:hover{
 }
 
 #eventList td {
-    padding-right: 25px;
+    padding-right: 30px;
 }
 
 
