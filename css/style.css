@@ -1589,10 +1589,10 @@ section#headerScrollWatch {
 /*********************************************************************************/
 
 	#one {
-		background: url('images/overlay.png'), url('../images/home_1.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url('../images/home_1.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
 	}
 
 /*********************************************************************************/
@@ -1658,11 +1658,11 @@ section#headerScrollWatch {
 /*********************************************************************************/
 
 #outreach {
-    background: url('images/overlay.png'),url('../images/outreach.png');
-    background-size: 256px 256px, cover;
-    background-attachment: fixed, fixed;
-    background-position: top left, bottom center;
-    background-repeat: repeat, no-repeat;
+    background: url('../images/outreach.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
 
 /*********************************************************************************/
