@@ -311,3 +311,7 @@ input:focus {
 #thanks #staticWrapper .content{
     margin-top: 25px;
 }
+
+.requiredField{
+    color: red;
+}
