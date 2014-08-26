@@ -142,10 +142,17 @@
                     margin-top: 35px !important;
                 }
 
+                .wForm form .oneChoice label, .wForm form .oneChoice .label {
+                    font-size: 18px;
+                }
+
             </style>
 
 
             <!-- Paste FormAssembly HTML after this -->
+            <!-- Remember, add class select_arrow to class inputWrapper that wraps the drop down box for Register/Volunteer -->
+
+
             <!-- FORM: HEAD SECTION -->
 
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -169,7 +176,7 @@
             <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.7/js/localization-en_US.js"></script>
 
             <!-- FORM: BODY SECTION -->
-            <div class="wFormContainer">
+            <div class="wFormContainer"  >
 
                 <div class=""><div class="wForm" id="tfa_0-WRPR" dir="ltr">
                     <div class="codesection" id="code-tfa_0"></div>
@@ -180,16 +187,19 @@
                         <div id="tfa_4-D" class="oneField    ">
                             <label id="tfa_4-L" for="tfa_4" class="label preField reqMark">E-mail address:</label><br><div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="" placeholder="" class="validate-email required"></div>
                         </div>
+                        <div id="tfa_49-D" class="oneField    ">
+                            <label id="tfa_49-L" for="tfa_49" class="label preField ">Phone number:</label><br><div class="inputWrapper"><input type="text" id="tfa_49" name="tfa_49" value="" placeholder="" class=""></div>
+                        </div>
                         <div id="tfa_22-D" class="oneField    ">
                             <label id="tfa_22-L" for="tfa_22" class="label preField ">I'd like to find out more about:</label><br><div class="inputWrapper select_arrow"><select id="tfa_22" name="tfa_22" class=""><option value="">Please select...</option>
-                            <option value="tfa_23" id="tfa_23" data-conditionals="#tfa_6" class="">Becoming a Member</option>
+                            <option value="tfa_23" id="tfa_23" data-conditionals="#tfa_6" class="">Registration</option>
                             <option value="tfa_24" id="tfa_24" data-conditionals="#tfa_35" class="">Volunteering</option></select></div>
                         </div>
                         <div id="tfa_6-D" class="oneField    ">
-                            <label id="tfa_6-L" for="tfa_6" class="label preField ">Which offerings are you interested in?</label><br><div class="inputWrapper check_top"><span id="tfa_6" class="choices vertical " data-condition="`#tfa_23`"><span class="oneChoice"><input type="checkbox" value="tfa_7" class="" id="tfa_7" name="tfa_7"><label class="label postField" id="tfa_7-L" for="tfa_7">Networking</label></span><span class="oneChoice"><input type="checkbox" value="tfa_8" class="" id="tfa_8" name="tfa_8"><label class="label postField" id="tfa_8-L" for="tfa_8">Working with a mentor</label></span><span class="oneChoice"><input type="checkbox" value="tfa_9" class="" id="tfa_9" name="tfa_9"><label class="label postField" id="tfa_9-L" for="tfa_9">Open lab time</label></span><span class="oneChoice"><input type="checkbox" value="tfa_10" class="" id="tfa_10" name="tfa_10"><label class="label postField" id="tfa_10-L" for="tfa_10">Technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_11" class="" id="tfa_11" name="tfa_11"><label class="label postField" id="tfa_11-L" for="tfa_11">Non-technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_12" class="" id="tfa_12" name="tfa_12"><label class="label postField" id="tfa_12-L" for="tfa_12">Career counseling</label></span><span class="oneChoice"><input type="checkbox" value="tfa_46" class="" id="tfa_46" name="tfa_46" data-conditionals="#tfa_20"><label class="label postField" id="tfa_46-L" for="tfa_46">Other</label></span></span></div>
+                            <label id="tfa_6-L" for="tfa_6" class="label preField ">Which offerings are you interested in?</label><br><div class="inputWrapper"><span id="tfa_6" class="choices vertical " data-condition="`#tfa_23`"><span class="oneChoice"><input type="checkbox" value="tfa_7" class="" id="tfa_7" name="tfa_7"><label class="label postField" id="tfa_7-L" for="tfa_7">Networking</label></span><span class="oneChoice"><input type="checkbox" value="tfa_8" class="" id="tfa_8" name="tfa_8"><label class="label postField" id="tfa_8-L" for="tfa_8">Working with a mentor</label></span><span class="oneChoice"><input type="checkbox" value="tfa_9" class="" id="tfa_9" name="tfa_9"><label class="label postField" id="tfa_9-L" for="tfa_9">Open lab time</label></span><span class="oneChoice"><input type="checkbox" value="tfa_10" class="" id="tfa_10" name="tfa_10"><label class="label postField" id="tfa_10-L" for="tfa_10">Technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_11" class="" id="tfa_11" name="tfa_11"><label class="label postField" id="tfa_11-L" for="tfa_11">Non-technical workshops</label></span><span class="oneChoice"><input type="checkbox" value="tfa_12" class="" id="tfa_12" name="tfa_12"><label class="label postField" id="tfa_12-L" for="tfa_12">Career counseling</label></span><span class="oneChoice"><input type="checkbox" value="tfa_46" class="" id="tfa_46" name="tfa_46" data-conditionals="#tfa_20"><label class="label postField" id="tfa_46-L" for="tfa_46">Other</label></span></span></div>
                         </div>
                         <div id="tfa_35-D" class="oneField    ">
-                            <label id="tfa_35-L" for="tfa_35" class="label preField ">Which offerings are you interested in?</label><br><div class="inputWrapper check_top"><span id="tfa_35" class="choices vertical " data-condition="`#tfa_24`"><span class="oneChoice"><input type="checkbox" value="tfa_42" class="" id="tfa_42" name="tfa_42"><label class="label postField" id="tfa_42-L" for="tfa_42">Becoming a volunteer</label></span><span class="oneChoice"><input type="checkbox" value="tfa_43" class="" id="tfa_43" name="tfa_43"><label class="label postField" id="tfa_43-L" for="tfa_43">Becoming a mentor</label></span><span class="oneChoice"><input type="checkbox" value="tfa_44" class="" id="tfa_44" name="tfa_44"><label class="label postField" id="tfa_44-L" for="tfa_44">Being a guest speaker</label></span><span class="oneChoice"><input type="checkbox" value="tfa_47" class="" id="tfa_47" name="tfa_47" data-conditionals="#tfa_20"><label class="label postField" id="tfa_47-L" for="tfa_47">Other</label></span></span></div>
+                            <label id="tfa_35-L" for="tfa_35" class="label preField ">Which offerings are you interested in?</label><br><div class="inputWrapper"><span id="tfa_35" class="choices vertical " data-condition="`#tfa_24`"><span class="oneChoice"><input type="checkbox" value="tfa_50" class="" id="tfa_50" name="tfa_50"><label class="label postField" id="tfa_50-L" for="tfa_50">Teach a skill set</label></span><span class="oneChoice"><input type="checkbox" value="tfa_42" class="" id="tfa_42" name="tfa_42"><label class="label postField" id="tfa_42-L" for="tfa_42">Becoming a volunteer</label></span><span class="oneChoice"><input type="checkbox" value="tfa_43" class="" id="tfa_43" name="tfa_43"><label class="label postField" id="tfa_43-L" for="tfa_43">Becoming a mentor</label></span><span class="oneChoice"><input type="checkbox" value="tfa_44" class="" id="tfa_44" name="tfa_44"><label class="label postField" id="tfa_44-L" for="tfa_44">Being a guest speaker</label></span><span class="oneChoice"><input type="checkbox" value="tfa_47" class="" id="tfa_47" name="tfa_47" data-conditionals="#tfa_20"><label class="label postField" id="tfa_47-L" for="tfa_47">Other</label></span></span></div>
                         </div>
                         <div id="tfa_20-D" class="oneField    ">
                             <label id="tfa_20-L" for="tfa_20" class="label preField ">Other:</label><br><div class="inputWrapper"><textarea style="width: 690px; height: 110px" id="tfa_20" name="tfa_20" data-condition="`#tfa_46` OR `#tfa_47`" class=""></textarea></div>
@@ -208,10 +218,14 @@
                         </fieldset></div>
                         <div class="actions" id="tfa_0-A"><input type="submit" class="primaryAction" value="Submit"></div>
                         <div style="clear:both"></div>
-                        <input type="hidden" value="342992" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="ed72f2f24609af530bb63366c90d0d55" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="7" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+                        <input type="hidden" value="342992" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="ed72f2f24609af530bb63366c90d0d55" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="8" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
                     </form>
                 </div></div>
+
             </div>
+
+
+            <!-- End Form Assembly HTML -->
         </div>
 
     </div>
