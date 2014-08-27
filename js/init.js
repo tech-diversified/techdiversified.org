@@ -536,7 +536,7 @@ function postLoad() {
 
 function scrollCheck() {
   //Manually check to see if we start out past 280px.  If so, then show the top banner.
-  if (window.scrollY > 280) {
+  if (window.pageYOffset > 280) {
     //Turn on class
     $("#nav").addClass('active');
   } else {
