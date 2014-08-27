@@ -1674,6 +1674,13 @@ section#headerScrollWatch {
     background-repeat: repeat;
     min-height: 55em;
 }
+
+#honey_i_shrunk_the_kids{
+    width: 100%;
+    position: absolute;
+    display: block;
+    bottom: 5em;
+}
 			
 /*********************************************************************************/
 /* Contact                                                                       */
