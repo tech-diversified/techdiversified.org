@@ -294,29 +294,23 @@
             hAxis: {title: 'Ethnicity'},
             vAxis: {title: "Percent of employees", maxValue: 100},
             seriesType: "bars",
-            //series: {5: {type: "line"}},
             colors: ['#1c4646', '#e36c5a', '#f5af33', '#74a9b5', '#6c2e33', '#6ecad4']
         };
+
+        //For mobile, put the legend underneath
+        if($("body").width() < 500){
+            options.legend = 'bottom';
+        }
 
         var chart = new google.visualization.ColumnChart(document.getElementById('infographic-table'));
 
         chart.draw(data, options);
 
-        var data = google.visualization.arrayToDataTable([
-            ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
-            ['2004/05', 165, 938, 522, 998, 450, 614.6],
-            ['2005/06', 135, 1120, 599, 1268, 288, 682],
-            ['2006/07', 157, 1167, 587, 807, 397, 623],
-            ['2007/08', 139, 1110, 615, 968, 215, 609.4],
-            ['2008/09', 136, 691, 629, 1026, 366, 569.6]
-        ]);
-
-        var options = {
-            title: 'Monthly Coffee Production by Country'
-
-        };
-
     }
+
+    $(window).resize(function(){
+        drawChart();
+    });
 </script>
 <script>
 

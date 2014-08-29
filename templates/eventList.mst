@@ -1,4 +1,4 @@
-<tr>
+<thead>
    <th>
      Event
    </th>
@@ -8,7 +8,7 @@
    <th>
      Location
    </th>
-</tr>
+</thead>
 {{#results}}
-	<tr><td><a target='_blank' href="{{event_url}}">{{name}}</a></td><td>{{#DateFormatter}} {{time}} {{/DateFormatter}}</td><td>{{venue.name}}</td></tr>
+	<tr><td data-title="Event"><a target='_blank' href="{{event_url}}">{{name}}</a></td><td data-title="Date/Time">{{#DateFormatter}} {{time}} {{/DateFormatter}}</td><td data-title="Location">{{venue.name}}</td></tr>
 {{/results}}

@@ -1,6 +1,6 @@
 #nav{
-    top: 0px;
-    height: 75px;
+    top: 0px !important;
+    height: 75px !important;
 }
 
 .static-inner{

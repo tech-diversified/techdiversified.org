@@ -78,23 +78,24 @@
 	body {
 		padding-top: 2.5em;
 	}
-
-	#logo {
-		text-align: center;
-		position: relative;
-		left: 0;
-		top: 0;
-		height: 2.5em;
-		line-height: 2.5em;
-	}
 	
 		#logo a {
 			font-size: 1em;
 		}
 	
 	#nav {
-		display: none;
+		top: 0px;
 	}
+
+#nav ul {
+    display: none;
+}
+
+#logo {
+    top: 13px;
+    height: 2.5em;
+    line-height: 2.5em;
+}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -104,6 +105,7 @@
 	}
 		
 		#footer .menu {
+            left: 0;
 		}
 		
 			#footer .menu li {
@@ -152,3 +154,124 @@
 				background-size: contain;
 				opacity: 0.65;
 			}
+
+
+
+/*********************************************************************************/
+/* Custom TD                                                                     */
+/*********************************************************************************/
+
+#logo .logo_text, section#headerScrollWatch {
+    display: none;
+}
+
+#headerMenuToggle.threeLines {
+    top: 8px;
+}
+
+.width-restriction {
+    width: auto;
+}
+
+.friends {
+    padding: 15px;
+    width: auto;
+}
+
+#lisa {
+    display: none;
+}
+
+.floatLeft {
+    float: none;
+}
+
+#infographic-right-content {
+    text-align: center;
+}
+
+.infographic-title-1 {
+    font-size: 2em;
+    line-height: 2em;
+    width: auto;
+    text-align: center;
+}
+
+.infographic-subtitle {
+    margin: 25px 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#infographic-table {
+    padding: 20px 0;
+    height: 25em;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+.footnotes {
+    font-size: 12px;
+    text-align: left;
+    padding: 12px;
+}
+
+#our_program_wrapper .td {
+    display: block;
+    padding: 5px 20px;
+}
+
+#our_program_wrapper .tr {
+    display: block;
+}
+
+#our_program_table {
+    display: block;
+}
+
+.getInvolvedWrapper {
+    width: auto;
+}
+
+
+
+
+/******Static Pages *******/
+#program .panel {
+    display: none;
+    margin: auto;
+}
+
+#staticWrapper .content {
+    font-size: 12px;
+}
+
+#buttonPanel a {
+    display: block;
+    border-left: none;
+}
+
+.buttonTable {
+    margin: auto;
+}
+
+.static-inner {
+    padding: 20px 30px;
+}
+
+#eventList th[data-title]:before,
+#eventList td[data-title]:before {
+    content: attr(data-title) ":\00A0";
+    font-weight: bold;
+}
+
+#eventList tr,
+#eventList th,
+#eventList td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+
+#eventList thead { display: none; }

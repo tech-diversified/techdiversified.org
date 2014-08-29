@@ -302,4 +302,9 @@ function SetupProgramButtons(){
 
 }
 
+function scrollToTarget(target){
+  var offset = $(target).offset();
+  var scrollto = offset.top - $("#nav").height(); // height of the #nav bar
+  $('html, body').animate({scrollTop:scrollto}, 800);
+}
 
