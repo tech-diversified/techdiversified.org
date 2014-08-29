@@ -1,6 +1,5 @@
 #nav{
     top: 0px !important;
-    height: 75px !important;
 }
 
 .static-inner{
@@ -260,7 +259,7 @@ body, html{
 }
 
 #staticWrapper .list{
-    list-style: inherit;
+    list-style-type: disc;
     margin-left: 35px;
     display: inline-block;
     font-size: 0.9em;
