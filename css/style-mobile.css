@@ -302,3 +302,7 @@
 .wForm textarea#tfa_21 {
     max-width: 230px !important;
 }
+
+#staticWrapper div.question {
+    font-size: 20px;
+}
