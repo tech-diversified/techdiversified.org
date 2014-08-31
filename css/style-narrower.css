@@ -1,3 +1,4 @@
+/** iPad  **/
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -13,6 +14,7 @@
 	/* Main */
 		
 		.main {
+
 		}
 		
 			.main.style2 {
@@ -62,4 +64,24 @@
 			top: 0;
 			height: auto;
 			line-height: inherit;
+            left: 0;
 		}
+
+
+
+
+
+.width-restriction{
+    width: 685px;
+}
+
+#lisa {
+    height: 285px;
+    top: 155px;
+    position: absolute;
+    right: 20px;
+}
+
+#infographic-table {
+    max-width: 720px;
+}
