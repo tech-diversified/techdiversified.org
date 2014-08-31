@@ -88,5 +88,6 @@
     position: absolute;
     top: 100px;
     left: 50%;
-    margin-left: -50%;
+    margin-left: 0 auto;
+    width: 50%;
 }

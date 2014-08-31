@@ -314,3 +314,7 @@ input:focus {
 .requiredField{
     color: red;
 }
+
+#partner-list li {
+    margin-bottom: 35px;
+}
