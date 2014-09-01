@@ -97,7 +97,8 @@
 </body>
 <script>
     $( document ).ready(function() {
-        loadEventsFromMeetup();
+        //loadEventsFromMeetup();
+        loadEventsFromEventBrite();
     });
 
 
@@ -127,13 +128,45 @@
                     }
                 });
 
-                $.get('templates/eventList.mst', function(template) {
+                $.get('templates/eventList-Meetup.mst', function(template) {
                     var rendered = Mustache.render(template, data);
                     $('#eventList').html(rendered);
                 });
             }
         });
     }
+
+    function loadEventsFromEventBrite() {
+
+        var url = 'https://www.eventbriteapi.com/v3/events/search/?organizer.id=6847174039&token=RBMNTBKGB43DVAWBZEOW';
+
+        $.ajax({ url: url }).success(function(data) {
+            if (data.events && data.events.length == 0) {
+
+            }else{
+                //Add date formatting functions here
+                $.each(data.events, function(idx, item){
+                    item.DateFormatter = function() {
+                        return function(rawDate, render) {
+                            var date = new Date(render($.trim(rawDate)));
+                            return (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear() + ' ' +
+                                    [(date.getHours() > 12 ? date.getHours() - 12 : date.getHours()),
+                                        (date.getMinutes() == 0 ? "00" : date.getMinutes())
+                                    ].join(':') + (date.getHours() > 12 ? " PM" : " AM");
+
+                        }
+                    }
+                });
+
+                $.get('templates/eventList-EventBrite.mst', function(template) {
+                    var rendered = Mustache.render(template, data);
+                    $('#eventList').html(rendered);
+                });
+            }
+        });
+    }
+
+
 </script>
 <script>
 
