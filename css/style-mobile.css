@@ -299,7 +299,7 @@
     width: 100% !important;
 }
 
-.wForm textarea#tfa_21 {
+.wForm textarea#tfa_21, .wForm textarea#tfa_53 {
     max-width: 230px !important;
 }
 
