@@ -97,14 +97,15 @@
 </body>
 <script>
     $( document ).ready(function() {
-        loadEventsFromMeetup();
-        //loadEventsFromEventBrite();
+        //loadEventsFromMeetup();
+        loadEventsFromEventBrite();
     });
 
 
     function loadEventsFromMeetup() {
 
-        var url = 'https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=tech-diversified&page=20&key=5350685a4d783d675e4927440431a6c';
+        //var url = 'https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=tech-diversified&page=20&key=5350685a4d783d675e4927440431a6c';
+        var url = 'https://api.meetup.com/events?&sign=true&photo-host=public&group_urlname=tech-diversified&page=20&key=5350685a4d783d675e4927440431a6c';
 
         $.ajax({ url: url,
             crossDomain: true,
@@ -126,6 +127,9 @@
 
                         }
                     }
+
+                    if(!item.venue_name) item.venue_name = "Spatial Development International";
+
                 });
 
                 $.get('templates/eventList-Meetup.mst', function(template) {

@@ -204,7 +204,7 @@
 
 
 
-$( document ).ready(function() {
+$(document).ready(function() {
   //TD Stuff
   $(".threeLines").on("click", function (evt) {
     $("#rightSideBar").toggleClass("active");
