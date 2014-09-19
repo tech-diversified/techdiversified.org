@@ -276,6 +276,10 @@
     white-space: normal;
 }
 
+#eventList tr {
+    margin: 15px 0;
+}
+
 #eventList thead { display: none; }
 
 #staticWrapper .static-tabs .tab {
