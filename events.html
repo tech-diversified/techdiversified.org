@@ -113,7 +113,7 @@
             dataType: "jsonp"
         }).success(function(data) {
             if (data.results.length == 0) {
-
+                $('#eventList').html("No upcoming workshops scheduled.  Contact us to recommend a topic!");
             }else{
                 //Add date formatting functions here
                 $.each(data.results, function(idx, item){
